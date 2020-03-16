@@ -25,6 +25,9 @@
     <div v-if="field.showDimensions" class="type">
       {{ mimeType }}
     </div>
+    <div v-if="image.custom_properties.requested_for_deletion" class="dimensions">
+      Waiting for delete confrimation
+    </div>
   </gallery-item>
 </template>
 
